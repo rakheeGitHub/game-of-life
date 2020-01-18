@@ -1,4 +1,4 @@
-node {
+pipeline {
    // Mark the code checkout 'stage'....
    stage 'Checkout' {
       git url: 'https://github.com/rakheeGitHub/game-of-life.git'
