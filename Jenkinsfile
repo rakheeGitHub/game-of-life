@@ -1,5 +1,5 @@
 pipeline {
-   agent any {
+   //agent any {
       stages {
          stage ('Build') {
             //Get the maven tool.
@@ -13,6 +13,6 @@ pipeline {
             step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/*.xml'])
          }
       }
-   }
+   //}
 }
      
